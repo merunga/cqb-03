@@ -1,0 +1,131 @@
+:root {
+    --color-terminal:#292b36;
+    --borde-redondo: 6px;
+    
+}
+body {
+        background-color: rgb(67, 90, 90);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(242, 247, 247);
+        height: 100vh;
+    
+
+}
+
+main {
+    padding: 75px;
+    box-shadow: 8px 8px 35px 8px rgb(0 0 0 / 75%);
+    border-radius: var(--borde-redondo);
+}
+
+h1 {
+    margin: 0;
+    text-align:center;
+    align-items: center;
+    letter-spacing: 4px;
+    font-size: 40px;
+}
+#botonCifrar {
+    background: #3f4040;
+    color: aliceblue;
+    padding: 10px 10px;
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
+    letter-spacing: 3px;
+    font-size: 18px;
+    top: 10px;
+    height: 45px;
+    width: 180px;
+    float: left;
+    border: none;
+    border-radius: 0.625em;
+    z-index: 1;
+    overflow: hidden;
+}
+#botonDescifrar {
+    background: #3b3d3d;
+    color: aliceblue;
+    padding: 10px 10px;
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
+    letter-spacing: 3px;
+    font-size: 18px;
+    top: 10px;
+    height: 45px;
+    width: 180px;
+    float: right;
+    border: none;
+    border-radius: 0.625em;
+    z-index: 1;
+    overflow: hidden;
+}
+button:hover {
+    color: black;
+   }
+   
+   button:after {
+    content: "";
+    background: #4D4C4B;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+   }
+   
+   button:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+   }
+
+
+#input-cifrar, #resultado {
+    background-color: var(--color-terminal);
+}
+#input-cifrar {
+    margin: 10px 0 0;
+    padding: 10px;
+    height: 25px;
+    width: 400px;
+    color: aliceblue;
+    border-top-left-radius: var(--borde-redondo);
+    border-top-right-radius: var(--borde-redondo);
+}
+#resultado {
+    padding: 10px;
+    height: 25px;
+    width: 400px;
+    color: chartreuse;
+    padding: 0 10px 10px;
+    border-bottom-left-radius: var(--borde-redondo);
+    border-bottom-right-radius: var(--borde-redondo);
+}
+
+.deslizante {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 20px;
+    text-align: center;
+    align-items: center;
+
+}
+
+#rango {
+    border-radius: var(--borde-redondo);
+    margin: 0;
+    padding: 0 5px;
+    height: 20px;
+
+}
+footer {
+    position: absolute;
+    bottom: 0;
+}

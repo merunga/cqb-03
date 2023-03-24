@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cifrado César</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div id="root">
+        <h1>Cifrado César</h1>
+        <p id="start"></p>
+        <form id="Cifrador" autocomplete="off">
+          <input id="input-cifrar" spellcheck="false" placeholder="Introduzca el texto..." type="text" name="text">
+        </form>
+        <form id="Resultado">
+          <input id="resultado" type="text" name="">
+        </form>
+        <div class="deslizante">
+          <input id="rango" type="range" value="10" min="1" max="20" oninput= "this.nextElementSibling.value = this.value">
+           <output>10</output>
+        </div>
+        <div id="containerButton">
+        <div id="left"><button id="botonCifrar">Cifrar</button></div>
+        <div id="right"><button id="botonDescifrar">Descifrar</button></div>
+       </div>
+       </div>
+        <script src="index.js" type="module"></script>
+
+        
+    </main>
+    <footer>Developed by Herly Linarez</footer>
+  </body>
+  
+</html>
